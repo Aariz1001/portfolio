@@ -34,8 +34,8 @@ export default function ProjectCard({ project, onClick, index }: ProjectCardProp
     >
       {/* top coloured bar */}
       <div
-        className="h-1 w-full"
-        style={{ background: `linear-gradient(90deg, ${project.color}80, transparent)` }}
+        className="h-[3px] w-full"
+        style={{ background: `linear-gradient(90deg, ${project.color}, ${project.color}30)` }}
       />
 
       <div className="flex flex-col flex-1 p-6 gap-4">

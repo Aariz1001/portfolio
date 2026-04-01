@@ -26,7 +26,7 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-5xl mx-auto px-6 py-32 w-full">
-        <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start gap-12 sm:gap-16">
+        <div className="flex flex-col-reverse sm:flex-row items-center sm:items-center gap-10 sm:gap-14">
 
           {/* text column */}
           <motion.div
@@ -35,10 +35,6 @@ export default function Hero() {
             animate="show"
             className="flex-1 min-w-0"
           >
-            <motion.p variants={item} className="text-sm text-[var(--accent)] font-mono mb-4 tracking-wider">
-              Hi, I&apos;m
-            </motion.p>
-
             <motion.h1
               variants={item}
               className="text-5xl sm:text-7xl font-bold tracking-tight text-[var(--text)] leading-[1.08]"
@@ -48,14 +44,14 @@ export default function Hero() {
 
             <motion.p
               variants={item}
-              className="mt-4 text-xl sm:text-2xl font-medium text-[var(--muted)]"
+              className="mt-3 text-xl sm:text-2xl font-medium text-[var(--accent)]"
             >
               AI Engineer
             </motion.p>
 
             <motion.p
               variants={item}
-              className="mt-6 text-base sm:text-lg text-[var(--muted)] leading-relaxed max-w-xl"
+              className="mt-5 text-base text-[var(--muted)] leading-relaxed max-w-md"
             >
               I build AI systems that ship — from a monetised nutrition app on the App Store
               to autonomous agent pipelines, voice AI platforms, and RAG infrastructure.
@@ -93,22 +89,22 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
             className="shrink-0"
           >
             <div
-              className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden"
+              className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden"
               style={{
-                boxShadow: "0 0 0 3px var(--border), 0 0 40px var(--accent)28",
+                boxShadow: "0 0 0 2px var(--accent)50, 0 0 48px var(--accent)18",
               }}
             >
               <Image
                 src="/photo.jpg"
                 alt="Aariz Waqas"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
-                sizes="(max-width: 640px) 192px, 224px"
+                sizes="(max-width: 640px) 176px, 208px"
               />
             </div>
           </motion.div>

@@ -47,7 +47,7 @@ export default function Navbar() {
             href="https://github.com/Aariz1001"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm px-4 py-1.5 rounded-full border border-[var(--border)] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+            className="text-sm text-[var(--muted)] hover:text-[var(--text)] transition-colors"
           >
             GitHub
           </a>
