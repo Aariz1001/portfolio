@@ -2,6 +2,7 @@
 
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -30,8 +31,14 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-sm font-semibold tracking-tight text-[var(--text)]">
-          AW
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/generated/aw_logo.png"
+            alt="AW"
+            width={36}
+            height={36}
+            className="rounded-lg"
+          />
         </Link>
         <nav className="flex items-center gap-8">
           {links.map(({ label, href }) => (

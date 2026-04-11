@@ -17,14 +17,14 @@ export default function PhoneMockup({ screenshots, accentColor = "#7c6aff" }: Ph
       <div
         className="relative w-[220px] h-[440px] rounded-[42px] overflow-hidden shadow-2xl select-none"
         style={{
-          background: "#18181b",
+          background: "#1a1a1a",
           border: "8px solid #2a2a2a",
-          boxShadow: `0 0 0 1px #3a3a3a, 0 32px 64px rgba(0,0,0,0.7), 0 0 60px ${accentColor}30`,
+          boxShadow: `0 0 0 1px #3a3a3a, 0 32px 64px rgba(0,0,0,0.3), 0 0 60px ${accentColor}20`,
         }}
       >
         {/* notch */}
         <div className="absolute top-0 inset-x-0 flex justify-center z-10 pt-2">
-          <div className="w-20 h-5 bg-[#18181b] rounded-b-2xl" />
+          <div className="w-20 h-5 bg-[#1a1a1a] rounded-b-2xl" />
         </div>
         {/* screen content */}
         <div className="w-full h-full relative">
@@ -51,7 +51,7 @@ export default function PhoneMockup({ screenshots, accentColor = "#7c6aff" }: Ph
             onClick={() => setActive(i)}
             className="w-2 h-2 rounded-full transition-all duration-200 focus:outline-none"
             style={{
-              background: i === active ? accentColor : "#374151",
+              background: i === active ? accentColor : "#c4cfc2",
               transform: i === active ? "scale(1.2)" : "scale(1)",
             }}
             aria-label={`Screenshot ${i + 1}`}

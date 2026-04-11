@@ -9,6 +9,7 @@ import ProjectModal from "@/components/ProjectModal";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   const [selected, setSelected] = useState<Project | null>(null);
@@ -23,8 +24,17 @@ export default function Home() {
         <Hero />
 
         {/* Projects */}
-        <section id="projects" className="py-24">
-          <div className="max-w-5xl mx-auto px-6">
+        <section id="projects" className="py-24 relative">
+          {/* decorative background */}
+          <div className="absolute inset-0 pointer-events-none opacity-20">
+            <Image
+              src="/generated/projects_divider_hd.png"
+              alt=""
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="relative max-w-5xl mx-auto px-6">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}

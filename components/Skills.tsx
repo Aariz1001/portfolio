@@ -1,12 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { skills } from "@/lib/projects";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="skills" className="py-24 relative overflow-hidden">
+      {/* decorative accent — matching hero wave style */}
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <Image
+          src="/generated/skills_accent_hd.png"
+          alt=""
+          fill
+          className="object-cover"
+        />
+      </div>
+      <div className="relative max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

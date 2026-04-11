@@ -16,13 +16,28 @@ const item: Variants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-16">
+      {/* hero background image */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+      >
+        <Image
+          src="/generated/hero_bg_hd.png"
+          alt=""
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg)]/60 via-transparent to-[var(--bg)]" />
+      </div>
+
       {/* ambient glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 overflow-hidden"
       >
-        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-[var(--accent)] opacity-[0.07] blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-indigo-600 opacity-[0.05] blur-[100px]" />
+        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-[#2d6a4f] opacity-[0.08] blur-[120px]" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#40916c] opacity-[0.06] blur-[100px]" />
       </div>
 
       <div className="relative max-w-5xl mx-auto px-6 py-32 w-full">
@@ -95,7 +110,7 @@ export default function Hero() {
             <div
               className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden"
               style={{
-                boxShadow: "0 0 0 2px var(--accent)50, 0 0 48px var(--accent)18",
+                boxShadow: "0 0 0 2px #2d6a4f50, 0 0 48px #2d6a4f18",
               }}
             >
               <Image

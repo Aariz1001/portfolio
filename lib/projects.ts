@@ -207,6 +207,55 @@ Features:
     featured: false,
     color: "#f97316",
   },
+  {
+    id: "bored-of-directors",
+    title: "Bored of Directors",
+    tagline: "AI board of directors SaaS — strategic advice from five AI personas in real-time",
+    description:
+      "Solo founders describe a business challenge and receive parallel strategic analysis from five specialised AI advisors — Chairman, CFO, CMO, Legal, and Tech Lead — with multi-round debate and structured board reports.",
+    longDescription: `Bored of Directors is a SaaS platform that gives small business owners and solo founders access to an AI-powered virtual board of directors.
+
+Users describe a business challenge and five specialised AI personas respond simultaneously with streamed analysis:
+- Chairman — corporate strategy and governance
+- CFO — financial modelling and risk
+- CMO — go-to-market and growth
+- Legal Eagle — compliance and regulatory
+- Tech Lead — architecture and engineering
+
+Multi-round discussions let board members challenge and build on each other's analysis. Each session produces a structured meeting report with decisions, identified risks, and action items.
+
+Pro tier unlocks custom board members — fully configurable persona names, roles, expertise, system prompts, and AI model selection. RAG-powered document upload lets the board read PDFs before advising.
+
+Built with TanStack Start (React 19), Tailwind CSS v4, Shadcn UI, Firebase Auth + Firestore, OpenRouter SDK for multi-model AI, and Stripe for subscriptions.`,
+    tags: ["TanStack Start", "React 19", "OpenRouter", "Firebase", "Stripe", "Tailwind", "RAG"],
+    demo: "https://boredofdirectors.co.uk",
+    type: "web",
+    featured: true,
+    color: "#8b5cf6",
+  },
+  {
+    id: "unibreeze",
+    title: "UniBreeze",
+    tagline: "Verified student marketplace — buy & sell within your university community",
+    description:
+      "University-native marketplace where students verify with their .ac.uk email and trade textbooks, electronics, furniture and more. AI-moderated listings, real-time messaging with in-chat offers, and promoted listings via Stripe.",
+    longDescription: `UniBreeze is a verified student marketplace launching at the University of Glasgow. Students sign up with their @student.gla.ac.uk email and can immediately buy and sell within a trusted, verified community.
+
+Key features:
+- AI content moderation — Grok-4 validates both images (rejects non-product photos, explicit content, stock images) and text (screens for scams, hate speech, illegal items)
+- Real-time messaging — per-listing chat with Firestore subscriptions and in-chat offer system (propose → accept/decline with status tracking)
+- Promoted listings — £1.99 for 7-day featured placement via Stripe Checkout
+- 10 categories with full-text search, condition filters, price range, and sort options
+- AI support chatbot — context-aware assistant that can access the user's real listings, profile, and notifications
+- Notification system — 6 types with unread badge and dedicated history page
+
+Built with TanStack Start (React 19 SSR), Tailwind CSS 4, Firebase Auth + Firestore + Cloud Storage, OpenRouter SDK, Stripe for payments, and deployed on Google Cloud Run. A React Native + Expo mobile app is in development.`,
+    tags: ["TanStack Start", "React 19", "Firebase", "OpenRouter", "Stripe", "Cloud Run", "Expo"],
+    demo: "https://unibreeze.co.uk",
+    type: "web",
+    featured: true,
+    color: "#2d6a4f",
+  },
 ];
 
 export const skills = [

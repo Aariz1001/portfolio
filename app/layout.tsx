@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Aariz Waqas — AI Engineer",
   description:
     "Portfolio of Mohammad Aariz Waqas — AI Engineer building production LLM systems, agent pipelines, and shipped mobile apps. Glasgow, UK.",
+  icons: {
+    icon: "/generated/aw_logo.png",
+    apple: "/generated/aw_logo.png",
+  },
   openGraph: {
     title: "Aariz Waqas — AI Engineer",
     description: "Production AI systems, agent orchestration, and shipped products.",
